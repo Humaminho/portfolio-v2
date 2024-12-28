@@ -4,4 +4,131 @@
 
 :root {
 	--font-poppins: 'Poppins', sans-serif;
+
+	--max-width: 1280px;
+	--header-height: 64px;
+	--footer-height: 60px;
+}
+
+/* Reset and base styles */
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+	overflow-x: hidden;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+:focus-visible {
+	outline: 2px solid #0066ff;
+	outline-offset: 2px;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+	width: 8px;
+}
+
+::-webkit-scrollbar-track {
+	background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #888;
+	border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #555;
+}
+
+@layer utilities {
+	.max-container {
+		@apply max-w-[var(--max-width)] mx-auto px-4;
+	}
+
+	.flex-center {
+		@apply flex items-center justify-center;
+	}
+
+	.flex-between {
+		@apply flex items-center justify-between;
+	}
+}
+
+@media (hover: none) {
+	* {
+		-webkit-tap-highlight-color: transparent;
+	}
+}
+
+@media print {
+	@page {
+		margin: 2cm;
+	}
+}
+
+/* Remove default styling */
+button,
+input,
+select,
+textarea {
+	font: inherit;
+	color: inherit;
+	background: none;
+	border: none;
+	padding: 0;
+	margin: 0;
+	outline: none;
+	appearance: none;
+}
+
+button {
+	cursor: pointer;
+}
+
+ul,
+ol {
+	list-style: none;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+fieldset {
+	border: none;
+	margin: 0;
+	padding: 0;
+}
+
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+input[type='number'] {
+	appearance: textfield;
+	-moz-appearance: textfield;
+}
+
+input[type='search']::-webkit-search-decoration,
+input[type='search']::-webkit-search-cancel-button,
+input[type='search']::-webkit-search-results-button,
+input[type='search']::-webkit-search-results-decoration {
+	-webkit-appearance: none;
 }
