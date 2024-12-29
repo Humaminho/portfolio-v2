@@ -21,7 +21,7 @@ function MobileSocials() {
 	return (
 		<div className="flex items-center gap-4">
 			<Link
-				href="https://github.com/YOUR_USERNAME"
+				href="https://github.com/Humaminho/"
 				target="_blank"
 				rel="noopener noreferrer"
 				className="flex-center w-8 h-8 rounded-full border border-zinc-400 text-zinc-400 hover:text-zinc-50 hover:border-zinc-50 transition-all"
@@ -30,7 +30,7 @@ function MobileSocials() {
 				<Github className="w-4 h-4" />
 			</Link>
 			<Link
-				href="https://linkedin.com/in/YOUR_USERNAME"
+				href="https://www.linkedin.com/in/humam-dev/"
 				target="_blank"
 				rel="noopener noreferrer"
 				className="flex-center w-8 h-8 rounded-full border border-zinc-400 text-zinc-400 hover:text-zinc-50 hover:border-zinc-50 transition-all"
@@ -39,7 +39,7 @@ function MobileSocials() {
 				<Linkedin className="w-4 h-4" />
 			</Link>
 			<Link
-				href="https://leetcode.com/YOUR_USERNAME"
+				href="https://leetcode.com/u/Humaminho/"
 				target="_blank"
 				rel="noopener noreferrer"
 				className="flex-center w-8 h-8 rounded-full border border-zinc-400 text-zinc-400 hover:text-zinc-50 hover:border-zinc-50 transition-all"

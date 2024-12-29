@@ -28,7 +28,7 @@ export function SocialLinks() {
 	return (
 		<div className="hidden md:flex items-center gap-2">
 			<Link
-				href="https://github.com/YOUR_USERNAME"
+				href="https://github.com/Humaminho"
 				target="_blank"
 				rel="noopener noreferrer"
 				className={SocialLinkClass}
@@ -37,7 +37,7 @@ export function SocialLinks() {
 				<Github className="w-4 h-4" />
 			</Link>
 			<Link
-				href="https://linkedin.com/in/YOUR_USERNAME"
+				href="https://www.linkedin.com/in/humam-dev/"
 				target="_blank"
 				rel="noopener noreferrer"
 				className={SocialLinkClass}
@@ -46,7 +46,7 @@ export function SocialLinks() {
 				<Linkedin className="w-4 h-4" />
 			</Link>
 			<Link
-				href="https://leetcode.com/YOUR_USERNAME"
+				href="https://leetcode.com/u/Humaminho/"
 				target="_blank"
 				rel="noopener noreferrer"
 				className={SocialLinkClass}

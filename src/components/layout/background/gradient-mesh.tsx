@@ -84,7 +84,7 @@ export function GradientMesh({ className = '' }: GradientMeshProps) {
 	return (
 		<div className={`fixed inset-0 -z-10 w-screen h-screen ${className}`}>
 			<div
-				className="absolute inset-0"
+				className="absolute inset-0 opacity-60"
 				style={{
 					backgroundImage: `url("/svg/cover.svg")`,
 					backgroundSize: 'cover',
