@@ -17,8 +17,12 @@ function LeetCodeIcon() {
 	);
 }
 
-const SocialLinkClass =
-	'flex-center w-10 h-10 bg-zinc-950 rounded-full border border-zinc-400 text-zinc-400 hover:text-zinc-50 hover:border-zinc-50 transition-all';
+const SocialLinkClass = `
+  flex-center w-10 h-10 bg-zinc-950/70 hover:bg-zinc-950/80
+  rounded-full border hover:border-zinc-400 border-zinc-600 text-zinc-400 hover:text-zinc-50
+  hover:shadow-lg hover:shadow-zinc-400/10 transition-all
+  duration-300
+  `;
 
 export function SocialLinks() {
 	return (

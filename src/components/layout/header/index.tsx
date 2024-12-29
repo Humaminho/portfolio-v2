@@ -14,7 +14,7 @@ function Header() {
 		<header className="fixed top-0 left-0 right-0 h-[var(--header-height)]">
 			<div className="flex-between h-full max-container">
 				<Logo />
-				<Navbar className="hidden md:flex" />
+				<Navbar />
 				<div className="flex items-center gap-2">
 					<SocialLinks />
 					<button

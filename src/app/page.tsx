@@ -3,7 +3,7 @@ import Section from '@/components/layout/containers/section';
 
 export default function Home() {
 	return (
-		<PageContainer>
+		<>
 			<Section>
 				<div className="space-y-6">
 					<h1 className="text-4xl md:text-6xl font-bold">
@@ -88,6 +88,6 @@ export default function Home() {
 					</div>
 				</div>
 			</Section>
-		</PageContainer>
+		</>
 	);
 }
