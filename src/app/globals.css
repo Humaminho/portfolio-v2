@@ -13,8 +13,22 @@
 /* Reset and base styles */
 * {
 	box-sizing: border-box;
-	padding: 0;
+}
+
+/* Add specific resets for elements that should have no padding/margin by default */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+blockquote,
+dl,
+dd {
 	margin: 0;
+	padding: 0;
 }
 
 html,
@@ -61,7 +75,7 @@ img {
 
 @layer utilities {
 	.max-container {
-		@apply max-w-[var(--max-width)] mx-auto px-4;
+		@apply max-w-[var(--max-width)] mx-auto px-4 md:px-8;
 	}
 
 	.flex-center {

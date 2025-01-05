@@ -11,7 +11,7 @@ function Header() {
 	const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
 
 	return (
-		<header className="fixed top-0 left-0 right-0 h-[var(--header-height)]">
+		<header className="fixed z-10 top-0 left-0 right-0 h-[var(--header-height)]">
 			<div className="flex-between h-full max-container">
 				<Logo />
 				<Navbar />

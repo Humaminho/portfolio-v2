@@ -1,4 +1,5 @@
 import Header from '@/components/layout/header';
+import Footer from '@/components/layout/footer';
 import PageContainer from '@/components/layout/containers/page-container';
 import { GradientMesh } from '@/components/layout/background/gradient-mesh';
 import './globals.css';
@@ -19,11 +20,12 @@ export default function RootLayout({
 		<html lang="en" className={poppins.variable} suppressHydrationWarning>
 			<body
 				cz-shortcut-listen="true"
-				className="text-zinc-50 min-h-screen bg-zinc-950"
+				className="text-zinc-50 min-h-screen bg-zinc-950 flex flex-col"
 			>
 				<GradientMesh />
 				<Header />
 				<PageContainer>{children}</PageContainer>
+				<Footer />
 			</body>
 		</html>
 	);

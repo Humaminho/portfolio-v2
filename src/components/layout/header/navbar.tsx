@@ -53,7 +53,7 @@ function Navbar({ className = '' }: NavbarProps) {
 	];
 
 	return (
-		<div className="relative h-12">
+		<div className="hidden md:block relative z-10 h-12">
 			<nav
 				id="original-navbar"
 				className={cn(

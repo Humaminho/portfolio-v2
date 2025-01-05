@@ -1,5 +1,6 @@
 'use client';
 
+import { socialLinks } from '@/data/personal-links';
 import Link from 'next/link';
 import { Github, Linkedin } from 'lucide-react';
 
@@ -24,36 +25,31 @@ const SocialLinkClass = `
   duration-300
   `;
 
+const IconComponents = {
+	github: <Github className="w-4 h-4" />,
+	linkedin: <Linkedin className="w-4 h-4" />,
+	leetcode: <LeetCodeIcon />,
+};
+
 export function SocialLinks() {
 	return (
 		<div className="hidden md:flex items-center gap-2">
-			<Link
-				href="https://github.com/Humaminho"
-				target="_blank"
-				rel="noopener noreferrer"
-				className={SocialLinkClass}
-				aria-label="GitHub Profile"
-			>
-				<Github className="w-4 h-4" />
-			</Link>
-			<Link
-				href="https://www.linkedin.com/in/humam-dev/"
-				target="_blank"
-				rel="noopener noreferrer"
-				className={SocialLinkClass}
-				aria-label="LinkedIn Profile"
-			>
-				<Linkedin className="w-4 h-4" />
-			</Link>
-			<Link
-				href="https://leetcode.com/u/Humaminho/"
-				target="_blank"
-				rel="noopener noreferrer"
-				className={SocialLinkClass}
-				aria-label="LeetCode Profile"
-			>
-				<LeetCodeIcon />
-			</Link>
+			{socialLinks.map((link) => (
+				<Link
+					key={link.platform}
+					href={link.url}
+					target="_blank"
+					rel="noopener noreferrer"
+					className={SocialLinkClass}
+					aria-label={link.label}
+				>
+					{
+						IconComponents[
+							link.platform as keyof typeof IconComponents
+						]
+					}
+				</Link>
+			))}
 		</div>
 	);
 }
